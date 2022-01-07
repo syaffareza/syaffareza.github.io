@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Syaffa website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/hobbieess.css">
+  </head>
+  <body>
+    <header>
+      <script type="text/javascript">
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          // add a zero in front of numbers< 10
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+          t = setTimeout('startTime()', 500);
+        }
+
+        function checkTime(i) {
+          if (i < 10) {
+            i = "0" + i;
+          }
+          return i;
+        }
+      </script>
+      <body onload="startTime()">
+        <div id="txt" style="text-align: center"></div>
+        <div class="main">
+          <div class="logo">
+            <img src="images/logo.png">
+          </div>
+          <ul>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="biodata.html">BIODATA</a>
+            </li>
+            <li>
+              <a href="education.html">EDUCATION</a>
+            </li>
+            <li>
+              <a href="experience.html">EXPERIENCE</a>
+            </li>
+            <li>
+              <a href="family.html">FAMILY</a>
+            </li>
+            <li>
+              <a href="gallery.html">GALLERY</a>
+            </li>
+            <li>
+              <a href="friend.html">FRIEND</a>
+            </li>
+            <li>
+              <a href="hobbieesss.html">HOBBY</a>
+            </li>
+            <li class="active">
+              <a href="lifestyle.html">LIFESTYLE</a>
+            </li>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+          </ul>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1 align="center" style="color:#fff; font-size: 45px" ;>MY LIFESTYLE</h1>
+          <div class="HOBBY" style="color: #fff; text-align: justify;">
+            <ul>
+              <li type="circle">I really enjoy listening to music while doing a job or study because for me it can make me more active and can relieve my pressure. Another one I really love to listen to is Selena Gomez because I love her voice and also my favorite songs are Perfect and Lose You To Love Me.</li>
+              <li></li>
+            </ul>
+            <div class="spotify" style="text-align: center;">
+              <iframe src="https://open.spotify.com/embed/artist/0C8ZW7ezQVs4URX5aX7Kqx?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+          </div>
+      </body>
+      <div class="footer">
+        <a>Syaffa WEBSITE ©2022. ALL RIGHTS RESERVED</a>
+      </div>

@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>Syaffa website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <script type="text/javascript">
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          // add a zero in front of numbers< 10
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+          t = setTimeout('startTime()', 500);
+        }
+
+        function checkTime(i) {
+          if (i < 10) {
+            i = "0" + i;
+          }
+          return i;
+        }
+      </script>
+      <body onload="startTime()">
+        <div id="txt" style="text-align: center"></div>
+        <div class="main">
+          <div class="logo">
+            <img src="images/logo.png">
+          </div>
+          <ul>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li class="active">
+              <a href="biodata.html">BIODATA</a>
+            </li>
+            <li>
+              <a href="education.html">EDUCATION</a>
+            </li>
+            <li>
+              <a href="experience.html">EXPERIENCE</a>
+            </li>
+            <li>
+              <a href="family.html">FAMILY</a>
+            </li>
+            <li>
+              <a href="gallery.html">GALLERY</a>
+            </li>
+            <li>
+              <a href="friend.html">FRIENDS</a>
+            </li>
+            <li>
+              <a href="hobbieesss.html">HOBBY</a>
+            </li>
+            <li>
+              <a href="lifestyle.html">LIFESTYLE</a>
+            </li>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+          </ul>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1 align="center" style="color:#fff; font-size: 45px" ;>BIODATA</h1>
+          <div class="container">
+            <div class="profile">
+              <img src="images/profile.png" alt="Profile Picture">
+            </div>
+            <div class="biodata">
+              <br>
+              <h2 style="border: 5px;">My real name is Nur Syaffa Reza Binti Mohd Jefry and everyone called me by capa as my nickname. I am 20 years old. I live in Kampung Peserai, Batu Pahat Johor. I have 4 siblings including me, I am the eldest daughter in my family. I'm in my final year of diploma in information management in UniversitI of Teknologi Mara Segamat, Johor. I'm good at making friends, so I would appreciate everyone that wants to be my friend. My favorite food is Sushi and my favourite drink is Signature Brown Sugar Pearl Milk Tea. I also hang out with my friends whenever I feel bored. I'm so happy because i had my friends to go through my journey in my university life </h2>
+              <br>
+            </div>
+            <div class="footer">
+              <a>Syaffa WEBSITE ©2022. ALL RIGHTS RESERVED</a>
+            </div>
+    </header>
+  </body>
+</html>

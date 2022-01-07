@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Syaffa website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/hobbieess.css">
+  </head>
+  <body>
+    <header>
+      <script type="text/javascript">
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          // add a zero in front of numbers< 10
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+          t = setTimeout('startTime()', 500);
+        }
+
+        function checkTime(i) {
+          if (i < 10) {
+            i = "0" + i;
+          }
+          return i;
+        }
+      </script>
+      <body onload="startTime()">
+        <div id="txt" style="text-align: center"></div>
+        <div class="main">
+          <div class="logo">
+            <img src="images/logo.png">
+          </div>
+          <ul>
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="biodata.html">BIODATA</a>
+            </li>
+            <li>
+              <a href="education.html">EDUCATION</a>
+            </li>
+            <li>
+              <a href="experience.html">EXPERIENCE</a>
+            </li>
+            <li>
+              <a href="family.html">FAMILY</a>
+            </li>
+            <li>
+              <a href="gallery.html">GALLERY</a>
+            </li>
+            <li>
+              <a href="friend.html">FRIEND</a>
+            </li>
+            <li class="active">
+              <a href="hobbieesss.html">HOBBY</a>
+            </li>
+            <li>
+              <a href="lifestyle.html">LIFESTYLE</a>
+            </li>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+          </ul>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1 align="center" style="color:#fff; font-size: 45px" ;>MY HOBBY</h1>
+          <div class="HOBBY" style="color: #fff;">
+            <h1>WATCHING MOVIE</h1>
+            <ul>
+              <li type="circle">My favourite movie is Godzilla:King Of Monsters</li>
+              <li type="circle">I loves watching movie since 2018</li>
+              <li type="circle">my favourite hero and heroin in this movie is Dr Emma Russell and Dr Mark Russell</li>
+              <li type="circle">The genre for Godzilla:King Of Monster is aboutaction and adventure </li>
+              <li type="circle">This movie was my first movie that I wacthed at the cinema with my friends</li>
+              <li type="circle">this movie taught me how to be a brave person also a responsible person</li>
+              <li type="circle">I've gained so many lesson whenever I watched this movie</li>
+              <li type="circle">Godzilla: King Of Monsters's movie make me want to know about the history or legend monsters</li>
+              </li>
+              <li type="circle">like monster zero and others this movie also get many ratings in the internet</li>
+              <li type="circle">I learn my english by watching the movies
+            </ul>
+            <div style="text-align: center;">
+              <video controls>
+                <source src="video/trailer godzilla.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+      </body>
+      <div class="footer">
+        <a>Syaffa WEBSITE ©2022. ALL RIGHTS RESERVED</a>
+      </div>
